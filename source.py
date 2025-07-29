@@ -24,4 +24,4 @@ def perform_ocr(image_path):
 if __name__ == "__main__":
     image_path = "data/image.png"
     extracted_text = perform_ocr(image_path)
-    print(f"extracted Text: {extracted_text}")
+    print(f"Extracted Text: {extracted_text}")
