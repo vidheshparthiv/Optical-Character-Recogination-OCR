@@ -26,7 +26,7 @@ It’s handy for scanning documents, extracting text from screenshots, or buildi
 
 ---
 
-## Features
+## Features:
 
 - Supports image → text conversion  
 - Works with common image formats (JPEG, PNG, etc.)  
