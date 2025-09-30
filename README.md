@@ -1,3 +1,11 @@
+# Optical Character Recognition (OCR) 📸 → 📝
+
+![Python](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-BSL--1.0-green)
+![Issues](https://img.shields.io/github/issues/vidheshparthiv/Optical-Character-Recogination-OCR)
+![Stars](https://img.shields.io/github/stars/vidheshparthiv/Optical-Character-Recogination-OCR?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/vidheshparthiv/Optical-Character-Recogination-OCR)
+
 Convert text in images into editable, copyable text.
 
 ---
@@ -10,9 +18,8 @@ Convert text in images into editable, copyable text.
 | [Features](#features) | Key capabilities |
 | [Directory Structure](#directory-structure) | Project layout |
 | [Requirements](#requirements) | Dependencies, environment |
-| [Installation & Usage](#installation--usage) | How to run it |
+| [Installation & Usage](#installation--usage) | How to run this project |
 | [Examples](#examples) | Sample inputs & outputs |
-| [Tips & Best Practices](#tips--best-practices) | Suggestions to improve accuracy |
 | [Contributing](#contributing) | How to help |
 | [License](#license) | License info |
 
@@ -26,7 +33,7 @@ It’s handy for scanning documents, extracting text from screenshots, or buildi
 
 ---
 
-## Features:
+## Features
 
 - Supports image → text conversion  
 - Works with common image formats (JPEG, PNG, etc.)  
@@ -44,15 +51,13 @@ It’s handy for scanning documents, extracting text from screenshots, or buildi
 ├── LICENSE # License file
 └── README.md # This file
 
-pgsql
-Copy code
 
 ---
 
 ## Requirements
 
 | Package | Version / Notes |
-|--------|------------------|
+|---------|-----------------|
 | Python | 3.7+ recommended |
 | pytesseract | OCR engine wrapper |
 | pillow (PIL) | Image processing |
@@ -60,81 +65,61 @@ Copy code
 
 You’ll also need **Tesseract OCR** installed on your system.  
 
-- **Ubuntu/Debian**  
+- **Ubuntu / Linux**  
   ```bash
   sudo apt update
   sudo apt install tesseract-ocr
-Windows / macOS
-Download and install from Tesseract’s official repo.
+  ```
 
-Installation & Usage
+## Installation & Usage
+
 Clone the repo
-
-bash
-Copy code
+```bash
 git clone https://github.com/vidheshparthiv/Optical-Character-Recogination-OCR.git
 cd Optical-Character-Recogination-OCR
+```
+
 Install Python dependencies
-
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+```
+
 Run the script
-
-bash
-Copy code
+```bash
 python source.py path/to/your/image.png
-The program will output recognized text (either in the terminal or saved to a file depending on implementation).
+```
 
-(Optional) Preprocess the image
-
-Resize
-
-Convert to grayscale
-
-Apply thresholding or denoising
-
+The program will output recognized text (either in the terminal or saved to a file, depending on implementation).
 These steps improve OCR accuracy significantly.
 
-Examples
-Input Image	OCR Output
-data/sample1.png	Hello, world! This is detected text.
-data/sample2.jpg	1234 ABCD Test OCR line.
+## Examples
 
-💡 Tip: Add screenshots side-by-side for better visual effect.
+| Input Image        | OCR Output                               |
+|--------------------|-------------------------------------------|
+| `data/sample1.png` | `Hello, world! This is detected text.`    |
+| `data/sample2.jpg` | `1234 ABCD Test OCR line.`                |
 
-Tips & Best Practices 🛠
-Image quality matters — higher resolution and less noise give better results.
+Tip: Add screenshots side-by-side for better visual effect.
 
-Preprocessing helps — grayscale, thresholding, denoising, resizing.
 
-Text size — ensure the text isn’t too small.
 
-Language models — install additional Tesseract language packs for multilingual OCR.
+## Contributing
 
-Common mistakes — correct 0 vs O, 1 vs l, etc. via post-processing.
+Contributions, issues, and feature requests are welcome! 
 
-Batch processing — adapt script to process multiple images in one run.
+Here’s how you can contribute:
 
-Logging & error handling — provide clear messages for missing files or unsupported formats.
+```bash
+# 1. Fork the repo
+git fork https://github.com/vidheshparthiv/Optical-Character-Recogination-OCR.git
 
-Contributing
-Contributions, issues, and feature requests are welcome! 🎉
+# 2. Create your feature branch
+git checkout -b feature/awesome-feature
 
-Some ideas:
+# 3. Commit your changes
+git commit -m "Add some awesome feature"
 
-Improve preprocessing pipelines
+# 4. Push to the branch
+git push origin feature/awesome-feature
 
-Add command-line flags (e.g. choose thresholding)
-
-Add GUI / web interface
-
-Add PDF / multi-page document support
-
-Fork the repo → Create a branch → Commit changes → Open a PR ✅
-
-License
-This project is licensed under BSL-1.0 — see LICENSE for details.
-
-“The best way to predict the future is to implement it.”
-— (Adapted)
+# 5. Open a Pull Request
